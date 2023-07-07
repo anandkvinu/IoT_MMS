@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Chart with Toggles</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+    <script src ="static/script.js"></script>
+
+    <h1>Dynamic Chart</h1>
+    <canvas id="chart" width="400" height="200"></canvas>
+    <br>
+    <label for="switch1">Switch 1:</label>
+    <input type="checkbox" id="switch1" onchange="sendToggleState()">
+    <br>
+    <label for="switch2">Switch 2:</label>
+    <input type="checkbox" id="switch2" onchange="sendToggleState()">
+</body>
+</html>
