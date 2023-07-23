@@ -213,7 +213,7 @@ def delete(id, db: Session = Depends(get_db)):
     return {'user deleted!'}
 
 @app.get("/dashboard")
-def dashboard(request: Request, db:Session = Depends(get_db), current_user: User = Depends(get_current_user)):  #
+def dashboard(request: Request):  #db:Session = Depends(get_db), current_user: User = Depends(get_current_user)
     return templates.TemplateResponse("dashboard.html", {"request": request})
 
 
